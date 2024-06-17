@@ -8,12 +8,10 @@ class HomeScreen extends StatelessWidget{
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Opacity(
-          opacity: 0.6,
-          child: Image.asset(
+           Image.asset(
             'assets/images/quiz-logo.png',
             width: 250,
-          ),
+             color:const Color.fromARGB(150, 255, 255, 255),
         ),
         const SizedBox(height: 80),
         const Text(
