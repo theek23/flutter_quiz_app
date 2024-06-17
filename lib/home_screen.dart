@@ -8,13 +8,14 @@ class HomeScreen extends StatelessWidget{
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(
-          'assets/images/quiz-logo.png',
+        Opacity(
+          opacity: 0.6,
+          child: Image.asset(
+            'assets/images/quiz-logo.png',
             width: 250,
+          ),
         ),
-        const SizedBox(
-          height: 80,
-        ),
+        const SizedBox(height: 80),
         const Text(
           'Learn Flutter the fun way!',
           style: TextStyle(
@@ -22,9 +23,7 @@ class HomeScreen extends StatelessWidget{
             fontSize: 25
           ),
         ),
-        const SizedBox(
-          height: 30,
-        ),
+        const SizedBox(height: 30),
         OutlinedButton.icon(
             onPressed: startQuiz,
             style: OutlinedButton.styleFrom(
